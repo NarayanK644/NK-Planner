@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">&#10005;</button>
+        <a href="index.html" class="sidebar-link">Home</a>
+        <a href="services.html" class="sidebar-link">Services</a>
+        <a href="calculator.html" class="sidebar-link">Calculator</a>
+        <a href="contact.html" class="sidebar-link">Contact</a>
+      </div>
+    
+      <div id="main-content">
+        <button class="open-btn" onclick="toggleSidebar()">&#9776; Menu</button>
+      </div>
+    
+      <script>
+        function toggleSidebar() {
+          document.getElementById("sidebar").classList.toggle("active");
+          document.getElementById("main-content").classList.toggle("shifted");
+        }
+      </script>
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We offer a range of event planning services to make your special occasion unforgettable.</p>
+    
+    <div class="service-cards">
+      <div class="service-card">
+        <img src="event1.jpeg" alt="Wedding Services">
+        <h3>Weddings</h3>
+        <p>From intimate gatherings to grand celebrations, we bring your dream wedding to life.</p>
+      </div>
+      <div class="service-card">
+        <img src="event2.jpeg" alt="Corporate Events">
+        <h3>Corporate Events</h3>
+        <p>Professional and well-organized corporate events for all your business needs.</p>
+      </div>
+      <div class="service-card">
+        <img src="event3.jpeg" alt="Private Parties">
+        <h3>Private Parties</h3>
+        <p>Celebrate in style with personalized party planning for birthdays, anniversaries, and more.</p>
+      </div>
+      <div class="service-card">
+        <img src="event4.jpeg" alt="Conferences">
+        <h3>Conferences</h3>
+        <p>Efficient planning and support for large-scale conferences and seminars.</p>
+      </div>
+    </div>
+  </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+ 
+    AOS.init({
+        duration: 800, 
+        once: true,    
+    });
+</script>
+
+</body>
+</html>
